@@ -12,7 +12,7 @@ const gameBoard = (() => {
 
     const clearBoard = function() {
         this.board = EMPTY_BOARD;
-    }
+    };
 
     const renderBoard = function() {
         const boardDiv = document.querySelector("#board");
@@ -37,7 +37,7 @@ const gameBoard = (() => {
                     break;
             }
         });
-    }
+    };
 
-    return { clearBoard, renderBoard }
+    return { clearBoard, renderBoard };
 })();
