@@ -39,6 +39,19 @@ const gameBoard = (() => {
         });
     };
 
+    // (1, 2) -> 5
+    const convert2d = function(row, col) {
+        return row * 3 + col;
+    }
+
+    const get = function(row, col) {
+        return this.board[convert2d(row, col)];
+    }
+
+    const set = function(row, col, value) {
+        this.board[convert2d(row, col)] = value;
+    }
+
     return { clearBoard, renderBoard, get, set };
 })();
 
