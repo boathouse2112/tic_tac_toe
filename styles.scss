@@ -9,4 +9,8 @@
 .board {
     grid-row: 2;
     grid-column: 2;
+
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-rows: 33.3% 33.4% 33.3%;
 }
